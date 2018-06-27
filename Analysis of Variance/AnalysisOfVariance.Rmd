@@ -31,7 +31,6 @@ health <- rbind(health1[,1:2],health2[,1:2],health3[,1:2],health4[,1:2])
 > Question 1)  Describe and visualize the data:   
 
 a. What are the means of viewers intentions to share (INTEND.0) for each media type? (report four means)
-
 ```{r}
 round(sapply(split(health$INTEND.0, health$media), mean),2)
 ```
