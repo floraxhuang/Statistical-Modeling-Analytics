@@ -131,6 +131,7 @@ paste("95% confidence:",quantile(boot_f_null, 0.95),"and 99% confidence:",quanti
 ```
 
 c. Show the distribution of bootstrapped null values of F, the 95% and 99% cutoff values of F (according to the bootstrap), and also the mean actual F-statistic.
+
 ```{r}
 plot(density(boot_f_null), col='coral3', lwd=3, main="Distribution of bootstrapped null values of F")
 abline(v=quantile(boot_f_null, 0.95), col='lightslateblue',lty="dashed")
